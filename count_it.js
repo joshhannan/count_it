@@ -56,6 +56,7 @@ jQuery(function($) {
 			$(id+' .minutes .number').text( t.minutes );
 			$(id+' .seconds .number').text( t.seconds );
 			if(t.total<=0){
+				$('.ip-counter-content').html('<h6>The submission period has ended.</h6>');
 				clearInterval(timeinterval);
 			}
 		},1000);
